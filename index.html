@@ -1,9 +1,81 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-<title>Hi!</title>
-</head>
-<body>
-This goes the body
+    <title>★심리테스트★</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        p {
+            font-family: 'Nanum Myeongjo', serif;
+            font-size: 20px;
+        }
+        button {
+            font-family: 'Nanum Myeongjo', serif;
+        }
+    </style>
+<body style="background-color:ivory;">
+    <br>
+    <br>
+    <div style="padding: 10px;">
+        <p>안녕하세요, </p>
+        <p>지금부터 진행될 테스트는 간단한 몇 가지 문항으로 구성된 심리테스트입니다.</p>
+        <p>솔직하게 답변하시면 정확한 결과를 얻을 수 있습니다.</p>
+    </div>
+    <div align="center">
+        <button type="button" class="btn btn-success" style="text-align: center;" data-toggle="collapse" data-target="#Q1">시작하기</button>
+    </div>
+    <div id="Q1" class="collapse" style="padding: 10px;">
+        <p></p>
+        <p>Q1. <br>다음 중 당신이 먹고 싶은 음식은?</p>
+        <div class="btn-group"></div>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#Q2">족발</button>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#Q2">보쌈</button>
+    </div>
+    <div id="Q2" class="collapse" style="padding: 10px;">
+        <p></p>
+        <p>Q2.<br>다음 중 당신이 좋아하는 동물은?</p>
+        <div class="btn-group"></div>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#Q3">야옹이</button>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#Q3">멍멍이</button>
+    </div>
+    <div id="Q3" class="collapse" style="padding: 10px;">
+        <p></p>
+        <p>Q3.<br>다음 중 당신이 선호하는 색깔은? </p>
+        <div class="btn-group"></div>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#R">아이보리</button>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#R">브라운</button>
+    </div>
+    <div id="R" class="collapse" align="center">
+        <p></p>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">결과보기</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+            
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><p>검사결과!</p></h4>
+                </div>
+                <div class="modal-body">
+                <p><b>미뇽이는 우규를 좋아하는 타입입니다💘</b></p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
 </body>
+</head>
 </html>
